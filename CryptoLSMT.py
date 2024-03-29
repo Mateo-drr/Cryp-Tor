@@ -16,7 +16,7 @@ import torch.nn.functional as F
 import torch
 import torch.nn as nn
 
-path = 'E:/MachineLearning/CryptoPred/'
+path = 'D:/MachineLearning/CryptoPred/'
 
 df = pd.read_csv(path + 'ADA-USD.csv', index_col = 'Date', parse_dates=True)
 df.drop(columns=['Adj Close'], inplace=True)

@@ -1,0 +1,603 @@
+2024-03-29 22:25:56,391 INFO    StreamThr :14184 [internal.py:wandb_internal():86] W&B internal server running at pid: 14184, started at: 2024-03-29 22:25:56.391108
+2024-03-29 22:25:56,392 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status
+2024-03-29 22:25:56,397 INFO    WriterThread:14184 [datastore.py:open_for_write():85] open: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\run-6umo4d50.wandb
+2024-03-29 22:25:56,398 DEBUG   SenderThread:14184 [sender.py:send():382] send: header
+2024-03-29 22:25:56,561 DEBUG   SenderThread:14184 [sender.py:send():382] send: run
+2024-03-29 22:25:57,123 INFO    SenderThread:14184 [dir_watcher.py:__init__():211] watching files in: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files
+2024-03-29 22:25:57,125 INFO    SenderThread:14184 [sender.py:_start_run_threads():1136] run started: 6umo4d50 with start time 1711747556.392104
+2024-03-29 22:25:57,130 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: check_version
+2024-03-29 22:25:57,130 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: check_version
+2024-03-29 22:25:57,437 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: run_start
+2024-03-29 22:25:57,453 DEBUG   HandlerThread:14184 [system_info.py:__init__():32] System info init
+2024-03-29 22:25:57,453 DEBUG   HandlerThread:14184 [system_info.py:__init__():47] System info init done
+2024-03-29 22:25:57,453 INFO    HandlerThread:14184 [system_monitor.py:start():194] Starting system monitor
+2024-03-29 22:25:57,454 INFO    SystemMonitor:14184 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-29 22:25:57,454 INFO    HandlerThread:14184 [system_monitor.py:probe():214] Collecting system info
+2024-03-29 22:25:57,455 INFO    SystemMonitor:14184 [interfaces.py:start():190] Started cpu monitoring
+2024-03-29 22:25:57,455 INFO    SystemMonitor:14184 [interfaces.py:start():190] Started disk monitoring
+2024-03-29 22:25:57,456 INFO    SystemMonitor:14184 [interfaces.py:start():190] Started gpu monitoring
+2024-03-29 22:25:57,458 INFO    SystemMonitor:14184 [interfaces.py:start():190] Started memory monitoring
+2024-03-29 22:25:57,465 INFO    SystemMonitor:14184 [interfaces.py:start():190] Started network monitoring
+2024-03-29 22:25:57,470 DEBUG   HandlerThread:14184 [system_info.py:probe():196] Probing system
+2024-03-29 22:25:57,471 DEBUG   HandlerThread:14184 [system_info.py:_probe_git():181] Probing git
+2024-03-29 22:25:57,516 DEBUG   HandlerThread:14184 [system_info.py:_probe_git():189] Probing git done
+2024-03-29 22:25:57,517 DEBUG   HandlerThread:14184 [system_info.py:probe():244] Probing system done
+2024-03-29 22:25:57,517 DEBUG   HandlerThread:14184 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.5', 'heartbeatAt': '2024-03-29T21:25:57.470287', 'startedAt': '2024-03-29T21:25:56.383761', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 's:\\cryp-tor\\cryptolsmt.py', 'codePathLocal': 'cryptolsmt.py', 'codePath': 'cryptolsmt.py', 'git': {'remote': 'https://github.com/Mateo-drr/Cryp-Tor.git', 'commit': '598e7d227f43521cb5dad7cf770185c06f6c3d9e'}, 'email': 'mateodrr@gmail.com', 'root': 'S:/Cryp-Tor', 'host': 'DESKTOP-24KBHOO', 'username': 'Mateo-drr', 'executable': 'C:\\Users\\Mateo-drr\\AppData\\Local\\miniconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3300.0, 'min': 0.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 3300.0, 'min': 0.0, 'max': 3300.0}], 'disk': {'/': {'total': 465.75976181030273, 'used': 21.324073791503906}}, 'gpu': 'NVIDIA GeForce RTX 2060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2060', 'memory_total': 12884901888}], 'memory': {'total': 15.828716278076172}}
+2024-03-29 22:25:57,517 INFO    HandlerThread:14184 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-29 22:25:57,517 INFO    HandlerThread:14184 [system_monitor.py:probe():227] Publishing system info
+2024-03-29 22:25:57,517 DEBUG   HandlerThread:14184 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-03-29 22:25:57,517 DEBUG   HandlerThread:14184 [system_info.py:_save_pip():68] Saving pip packages done
+2024-03-29 22:25:57,517 DEBUG   HandlerThread:14184 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-03-29 22:25:58,136 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\conda-environment.yaml
+2024-03-29 22:25:58,136 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\requirements.txt
+2024-03-29 22:26:00,483 DEBUG   HandlerThread:14184 [system_info.py:_save_conda():87] Saving conda packages done
+2024-03-29 22:26:00,484 INFO    HandlerThread:14184 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-29 22:26:00,487 DEBUG   SenderThread:14184 [sender.py:send():382] send: files
+2024-03-29 22:26:00,487 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-03-29 22:26:00,494 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:26:00,494 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:26:00,495 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:26:00,920 DEBUG   SenderThread:14184 [sender.py:send():382] send: telemetry
+2024-03-29 22:26:01,145 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\conda-environment.yaml
+2024-03-29 22:26:01,145 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-metadata.json
+2024-03-29 22:26:01,145 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:26:01,259 INFO    wandb-upload_0:14184 [upload_job.py:push():131] Uploaded file C:\Users\MATEO-~1\AppData\Local\Temp\tmpkzous7i4wandb\8tsdbsn1-wandb-metadata.json
+2024-03-29 22:26:01,936 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:03,170 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:26:06,995 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:12,053 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:15,502 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:26:15,502 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:26:15,502 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:26:17,705 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:21,934 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:26:21,934 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:26:21,934 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:26:21,937 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:26:22,370 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:26:22,938 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:23,381 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:26:28,011 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:28,416 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\config.yaml
+2024-03-29 22:26:30,508 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:26:30,508 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:26:30,509 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:26:33,706 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:38,744 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:42,981 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:26:42,982 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:26:42,982 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:26:42,983 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:26:43,607 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:26:43,984 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:45,520 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:26:45,520 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:26:45,520 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:26:45,628 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:26:49,821 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:54,856 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:26:57,467 DEBUG   SystemMonitor:14184 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-29 22:26:57,467 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:27:00,505 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:00,521 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:27:00,521 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:27:00,522 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:27:04,204 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:27:04,205 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:27:04,205 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:27:04,205 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:27:04,773 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:27:05,787 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:27:06,215 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:11,278 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:15,532 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:27:15,532 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:27:15,533 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:27:16,748 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:21,803 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:25,405 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:27:25,405 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:27:25,405 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:27:25,406 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:27:25,977 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:27:26,987 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:27:27,432 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:27,480 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:27:30,540 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:27:30,556 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:27:30,556 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:27:32,727 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:37,771 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:42,824 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:45,552 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:27:45,552 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:27:45,552 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:27:46,680 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:27:46,680 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:27:46,680 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:27:46,681 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:27:47,186 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:27:48,696 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:49,205 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:27:53,738 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:27:57,491 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:27:59,518 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:00,564 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:28:00,564 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:28:00,564 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:28:04,853 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:07,766 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:28:07,766 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:28:07,766 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:28:07,767 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:28:08,394 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:28:09,396 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:28:10,804 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:15,574 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:28:15,574 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:28:15,574 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:28:15,811 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:20,864 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:25,918 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:27,506 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:28:29,038 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:28:29,038 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:28:29,038 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:28:29,040 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:28:29,572 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:28:30,565 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:28:30,565 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:28:30,582 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:28:31,597 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:28:31,818 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:36,858 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:41,921 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:45,585 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:28:45,585 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:28:45,585 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:28:47,801 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:50,399 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:28:50,399 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:28:50,399 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:28:50,399 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:28:50,808 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:28:51,808 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:28:53,427 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:28:57,516 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:28:58,529 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:00,585 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:29:00,586 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:29:00,600 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:29:03,816 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:08,860 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:11,566 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:29:11,567 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:29:11,567 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:29:11,567 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:29:11,984 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:29:12,994 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:29:14,594 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:15,592 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:29:15,592 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:29:15,608 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:29:19,841 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:24,897 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:27,519 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:29:30,553 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:30,616 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:29:30,616 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:29:30,616 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:29:33,014 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:29:33,015 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:29:33,015 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:29:33,016 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:29:33,214 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:29:35,242 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:29:36,048 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:41,092 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:45,622 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:29:45,622 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:29:45,622 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:29:46,841 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:51,877 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:54,120 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:29:54,120 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:29:54,120 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:29:54,121 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:29:54,448 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:29:55,462 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:29:57,142 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:29:57,522 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:30:00,614 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:30:00,630 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:30:00,630 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:30:02,841 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:07,885 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:12,918 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:15,262 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:30:15,263 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:30:15,263 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:30:15,263 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:30:15,620 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:30:15,636 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:30:15,636 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:30:15,637 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:30:17,659 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:30:18,871 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:23,923 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:27,535 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:30:29,563 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:30,623 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:30:30,639 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:30:30,639 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:30:34,908 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:36,249 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:30:36,249 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:30:36,249 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:30:36,250 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:30:36,823 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:30:37,826 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:30:40,273 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:45,308 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:45,625 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:30:45,656 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:30:45,656 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:30:50,830 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:55,902 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:30:57,363 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:30:57,363 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:30:57,363 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:30:57,363 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:30:57,546 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:30:58,038 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:30:59,052 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:31:00,631 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:31:00,679 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:31:00,679 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:31:00,922 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:05,964 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:11,016 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:15,640 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:31:15,687 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:31:15,687 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:31:16,909 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:18,389 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:31:18,390 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:31:18,390 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:31:18,391 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:31:19,257 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:31:19,257 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:31:22,433 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:27,493 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:27,556 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:31:30,642 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:31:30,706 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:31:30,706 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:31:32,962 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:38,004 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:39,710 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:31:39,711 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:31:39,711 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:31:39,711 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:31:40,462 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:31:41,471 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:31:43,742 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:45,644 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:31:45,719 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:31:45,719 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:31:48,960 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:54,020 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:31:57,560 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:31:59,571 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:00,658 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:32:00,737 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:32:00,737 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:32:01,028 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:32:01,028 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:32:01,028 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:32:01,029 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:32:01,644 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:32:03,665 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:32:05,065 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:10,107 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:15,154 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:15,663 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:32:15,742 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:32:15,742 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:32:20,946 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:22,430 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:32:22,430 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:32:22,430 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:32:22,431 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:32:22,845 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:32:23,847 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:32:26,468 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:27,564 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:32:30,665 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:32:30,744 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:32:30,744 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:32:31,983 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:37,040 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:42,084 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:43,939 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:32:43,939 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:32:43,939 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:32:43,940 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:32:44,008 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:32:45,671 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:32:45,750 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:32:45,750 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:32:46,020 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:32:47,953 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:53,011 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:32:57,567 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:32:58,573 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:00,681 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:33:00,761 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:33:00,761 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:33:04,011 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:05,492 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:33:05,492 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:33:05,493 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:33:05,493 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:33:06,224 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:33:07,232 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:33:09,541 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:14,580 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:15,688 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:33:15,751 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:33:15,751 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:33:20,043 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:25,086 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:26,966 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:33:26,966 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:33:26,966 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:33:26,967 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:33:27,455 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:33:27,581 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:33:29,464 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:33:30,594 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:30,702 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:33:30,766 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:33:30,766 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:33:36,030 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:41,088 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:45,715 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:33:45,793 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:33:45,793 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:33:46,980 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:48,282 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:33:48,283 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:33:48,283 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:33:48,283 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:33:48,651 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:33:49,665 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:33:52,316 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:57,381 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:33:57,587 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:34:00,724 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:34:00,805 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:34:00,805 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:34:03,054 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:08,099 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:09,361 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:34:09,362 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:34:09,362 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:34:09,362 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:34:09,904 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:34:11,916 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:34:13,403 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:15,735 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:34:15,815 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:34:15,815 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:34:19,025 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:24,062 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:27,591 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:34:29,617 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:30,564 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:34:30,564 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:34:30,564 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:34:30,565 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:34:30,744 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:34:30,822 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:34:30,822 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:34:31,091 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:34:31,091 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:34:35,071 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:40,103 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:45,151 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:45,755 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:34:45,835 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:34:45,835 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:34:51,136 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:51,870 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-29 22:34:51,870 DEBUG   SenderThread:14184 [sender.py:send():382] send: history
+2024-03-29 22:34:51,870 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: summary_record
+2024-03-29 22:34:51,871 INFO    SenderThread:14184 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-03-29 22:34:52,297 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\wandb-summary.json
+2024-03-29 22:34:53,311 INFO    Thread-16 :14184 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240329_222556-6umo4d50\files\output.log
+2024-03-29 22:34:56,992 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:34:57,600 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:35:00,762 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:35:00,841 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:35:00,841 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:35:02,044 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:07,083 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:12,132 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:15,766 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:35:15,844 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:35:15,844 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:35:18,026 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:23,066 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:27,616 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:35:28,630 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:30,769 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:35:30,863 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:35:30,863 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:35:34,078 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:39,130 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:44,175 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:45,770 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:35:45,878 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:35:45,878 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:35:50,081 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:55,123 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:35:57,618 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:36:00,636 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:00,776 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:36:00,902 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:36:00,902 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:36:06,192 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:11,230 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:15,777 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:36:15,902 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:36:15,903 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:36:17,094 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:22,138 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:27,185 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:27,625 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:36:30,793 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:36:30,917 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:36:30,917 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:36:33,097 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:38,130 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:43,179 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:45,801 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:36:45,927 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:36:45,927 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:36:49,181 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:54,229 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:36:57,629 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:36:59,644 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:00,806 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:37:00,933 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:37:00,933 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:37:05,213 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:10,244 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:15,302 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:15,807 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:37:15,947 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:37:15,947 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:37:20,341 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:25,393 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:27,631 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:37:30,654 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:30,809 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:37:30,950 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:37:30,950 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:37:36,130 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:41,168 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:45,813 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:37:45,953 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:37:45,953 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:37:46,432 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:51,482 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:56,511 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:37:57,632 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:38:00,817 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:38:00,974 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:38:00,974 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:38:02,224 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:07,258 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:12,302 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:15,819 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:38:15,989 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:38:15,989 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:38:18,250 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:23,294 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:27,633 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:38:28,642 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:30,824 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:38:30,997 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:38:30,997 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:38:34,225 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:39,254 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:44,285 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:45,829 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:38:46,000 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:38:46,000 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:38:50,270 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:55,311 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:38:57,649 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:39:00,670 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:00,838 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:39:01,023 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:39:01,023 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:39:06,308 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:11,341 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:15,846 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:39:16,034 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:39:16,034 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:39:17,232 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:22,263 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:27,297 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:27,656 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:39:30,850 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:39:31,040 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:39:31,040 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:39:33,222 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:38,286 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:43,320 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:45,861 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:39:46,036 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:39:46,036 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:39:49,267 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:54,305 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:39:57,668 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:39:59,690 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:00,865 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:40:01,051 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:40:01,051 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:40:05,388 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:10,429 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:15,477 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:15,865 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:40:16,065 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:40:16,065 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:40:21,302 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:26,335 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:27,683 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:40:30,868 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:40:31,089 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:40:31,089 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:40:32,251 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:37,289 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:42,348 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:45,876 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:40:46,092 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:40:46,092 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:40:48,340 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:53,388 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:40:57,688 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:40:58,691 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:00,882 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:41:01,114 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:41:01,114 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:41:04,354 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:09,403 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:14,444 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:15,891 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:41:16,113 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:41:16,113 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:41:20,405 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:25,445 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:27,693 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:41:30,711 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:30,899 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:41:31,118 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:41:31,118 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:41:36,359 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:41,412 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:45,907 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:41:46,122 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:41:46,123 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:41:47,298 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:52,346 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:57,396 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:41:57,706 DEBUG   SenderThread:14184 [sender.py:send():382] send: stats
+2024-03-29 22:42:00,913 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-29 22:42:01,118 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-29 22:42:01,118 DEBUG   SenderThread:14184 [sender.py:send_request():409] send_request: stop_status
+2024-03-29 22:42:03,366 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:42:08,411 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report
+2024-03-29 22:42:13,468 DEBUG   HandlerThread:14184 [handler.py:handle_request():146] handle_request: status_report

@@ -1,0 +1,14 @@
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_setup.py:_flush():76] Configure stats pid to 3080
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Mateo-drr\.config\wandb\settings
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_setup.py:_flush():76] Loading settings from S:\Cryp-Tor\wandb\settings
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'cryptolsmt.py', 'program_abspath': 's:\\cryp-tor\\cryptolsmt.py', 'program': 's:\\cryp-tor\\cryptolsmt.py'}
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_init.py:_log_setup():524] Logging user logs to S:\Cryp-Tor\wandb\run-20240329_221031-yt4iy21u\logs\debug.log
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_init.py:_log_setup():525] Logging internal logs to S:\Cryp-Tor\wandb\run-20240329_221031-yt4iy21u\logs\debug-internal.log
+2024-03-29 22:10:31,537 INFO    MainThread:3080 [wandb_init.py:init():564] calling init triggers
+2024-03-29 22:10:31,538 INFO    MainThread:3080 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'epochs': 2}
+2024-03-29 22:10:31,538 INFO    MainThread:3080 [wandb_init.py:init():609] wandb.init() called when a run is still active
+2024-03-29 22:12:00,356 WARNING MsgRouterThr:3080 [router.py:message_loop():77] message_loop has been closed
