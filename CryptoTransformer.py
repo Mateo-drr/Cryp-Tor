@@ -23,12 +23,14 @@ import wandb
 #https://finance.yahoo.com/quote/BTC-USD/history?period1=1410912000&period2=1711670400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true
 
 #PARAMS
-path = 'S:/Cryp-Tor/'
-device = 'cuda'
+#path = 'S:/Cryp-Tor/'
+path = 'C:/Users/joels/Documents/GitHub/Cryp-Tor/'
+device = 'cpu'#'cuda'
+w=False
 trainWindow = 256
 predWindow = 1
 batch = 32
-epochs = 25
+epochs = 1
 lr = 0.0001
 inSize = 4
 hidSize = 64
@@ -36,31 +38,33 @@ outSize = 1
 heads = 16 #bert has 12, large has 16
 layers = 24 #bert has 12, large has 24
 criterion = nn.MSELoss()
+coins=['BTC','ETH']
 
 #Wandb
-wandb.init(
-    # set the wandb project where this run will be logged
-    name='test3',
-    project="Cryp-Tor",
-    entity='unitnais',
-
-    # track hyperparameters and run metadata
-    config={
-    "train_window": trainWindow,
-    "pred_window": predWindow,
-    "batch_size": batch,
-    "epochs": epochs,
-    "learning_rate": lr,
-    "input_size": inSize,
-    "hidden_size": hidSize,
-    "output_size": outSize,
-    "num_heads": heads,
-    "num_layers": layers
-    }
-)
+if w:
+    wandb.init(
+        # set the wandb project where this run will be logged
+        name='test3',
+        project="Cryp-Tor",
+        entity='unitnais',
+    
+        # track hyperparameters and run metadata
+        config={
+        "train_window": trainWindow,
+        "pred_window": predWindow,
+        "batch_size": batch,
+        "epochs": epochs,
+        "learning_rate": lr,
+        "input_size": inSize,
+        "hidden_size": hidSize,
+        "output_size": outSize,
+        "num_heads": heads,
+        "num_layers": layers
+        }
+    )
 
 def readData(name):
-    df = pd.read_csv(path + f'{name}-USD.csv', index_col = 'Date', parse_dates=True)
+    df = pd.read_csv(path + f'data/{name}-USD.csv', index_col = 'Date', parse_dates=True)
     df.drop(columns=['Adj Close'], inplace=True)
     df.head(5)
     return df
@@ -69,7 +73,7 @@ def plotData(df,name):
     plt.plot(df.Close)
     plt.xlabel("Time")
     plt.ylabel("Price (USD)")
-    plt.savefig(path + f"{name}_initial_plot.png", dpi=250)
+    plt.savefig(path + f"plots/{name}_initial_plot.png", dpi=250)
     plt.show();
 
 df = readData('BTC')
@@ -224,7 +228,8 @@ for epoch in range(epochs):
             v_loss += loss
     
     print(f'E{epoch+1}: T:{t_loss/len(train_dl)} V:{v_loss/len(test_dl)}')
-    wandb.log({"train loss": t_loss/len(train_dl), "valid loss": v_loss/len(test_dl)})
+    if w:
+        wandb.log({"train loss": t_loss/len(train_dl), "valid loss": v_loss/len(test_dl)})
     if v_loss <= bestL:
         bestL = v_loss
         bestModel = copy.deepcopy(model)
@@ -278,5 +283,5 @@ for i in range(len(xtest)):
     plt.plot(pred_rv, label='Predicted Data') # predicted plot
     plt.title('Time-Series Prediction')
     plt.legend()
-    plt.savefig(path + "whole_plot.png", dpi=300)
+    plt.savefig(path + "plots/{coins[i]}_whole_plot.png", dpi=300)
     plt.show() 
