@@ -18,49 +18,57 @@ import torch.nn as nn
 from torch.utils.data import Dataset
 import copy
 import wandb
+from indicators.rsi import getRSI
 
 #Link to dowload historical crypto data
 #https://finance.yahoo.com/quote/BTC-USD/history?period1=1410912000&period2=1711670400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true
 
 #PARAMS
 path = 'S:/Cryp-Tor/'
+#path = 'C:/Users/joels/Documents/GitHub/Cryp-Tor/'
 device = 'cuda'
+w=True
 trainWindow = 256
 predWindow = 1
 batch = 32
 epochs = 500
 lr = 0.0001
-inSize = 4
+inSize = 5
 hidSize = 64
 outSize = 1
 heads = 16 #bert has 12, large has 16
 layers = 24 #bert has 12, large has 24
 criterion = nn.MSELoss()
-
+coins=['BTC','ETH']
+dframes = []
+indicators = {'rsi':[]}
 #Wandb
-wandb.init(
-    # set the wandb project where this run will be logged
-    name='testlong',
-    project="Cryp-Tor",
-    entity='unitnais',
 
-    # track hyperparameters and run metadata
-    config={
-    "train_window": trainWindow,
-    "pred_window": predWindow,
-    "batch_size": batch,
-    "epochs": epochs,
-    "learning_rate": lr,
-    "input_size": inSize,
-    "hidden_size": hidSize,
-    "output_size": outSize,
-    "num_heads": heads,
-    "num_layers": layers
-    }
-)
+if w:
+    wandb.init(
+        # set the wandb project where this run will be logged
+        name='rsi',
+        project="Cryp-Tor",
+        entity='unitnais',
+    
+        # track hyperparameters and run metadata
+        config={
+        "train_window": trainWindow,
+        "pred_window": predWindow,
+        "batch_size": batch,
+        "epochs": epochs,
+        "learning_rate": lr,
+        "input_size": inSize,
+        "hidden_size": hidSize,
+        "output_size": outSize,
+        "num_heads": heads,
+        "num_layers": layers
+        }
+    )
+
 
 def readData(name):
-    df = pd.read_csv(path + f'{name}-USD.csv', index_col = 'Date', parse_dates=True)
+    df = pd.read_csv(path + f'data/{name}-USD.csv', index_col = 'Date', parse_dates=True)
     df.drop(columns=['Adj Close'], inplace=True)
     df.head(5)
     return df
@@ -69,14 +77,17 @@ def plotData(df,name):
     plt.plot(df.Close)
     plt.xlabel("Time")
     plt.ylabel("Price (USD)")
-    plt.savefig(path + f"{name}_initial_plot.png", dpi=250)
+    plt.savefig(path + f"plots/{name}_initial_plot.png", dpi=250)
     plt.show();
 
-df = readData('BTC')
-df2 = readData('ETH')
-
-plotData(df, 'BTC')
-plotData(df2, 'ETH')
+#Read / calculate indicators / plot
+for coin in coins:
+    df = readData(coin)
+    rsi = getRSI(df)
+    #add the indicator to the df
+    df['rsi'] = rsi
+    dframes.append(df)
+    plotData(df, coin)
 
 # split a multivariate sequence past, future samples (X and y)
 # TLDR it organizes the data, so that for example you have to predict
@@ -127,18 +138,27 @@ def formatData(df):
     return X_train,X_val,y_train,y_val,xtest,ytest,[ss,mm]
 
 def joinData(d1,d2):
-    X_train = np.concatenate((d1[0],d2[0]),axis=0)
-    X_valid = np.concatenate((d1[1],d2[1]),axis=0)
-    y_train = np.concatenate((d1[2],d2[2]),axis=0)
-    y_valid = np.concatenate((d1[3],d2[3]),axis=0)
-    xtest,ytest = [],[]
-    xtest.append(d1[4])
-    xtest.append(d2[4])
-    ytest.append(d1[5])
-    ytest.append(d2[5])
+
     return X_train,X_valid,y_train,y_valid,xtest,ytest,[d1[6],d2[6]]
 
-X_train,X_valid,y_train,y_valid,xtest,ytest,scalers = joinData(formatData(df), formatData(df2))
+xtest,ytest,scalers = [],[],[]
+X_train,X_valid,y_train,y_valid = [],[],[],[]
+
+for df in dframes:
+    df = formatData(df)
+    X_train.append(df[0])
+    X_valid.append(df[1])
+    y_train.append(df[2])
+    y_valid.append(df[3])
+    xtest.append(df[4])
+    ytest.append(df[5])
+    scalers.append(df[6])
+
+X_train = np.concatenate(X_train, axis=0)
+X_valid = np.concatenate(X_valid, axis=0)
+y_train = np.concatenate(y_train, axis=0)
+y_valid = np.concatenate(y_valid, axis=0)
+#X_train,X_valid,y_train,y_valid,xtest,ytest,scalers = joinData(formatData(df), formatData(df2))
 
 ###############################################################################
 #PYTORCH
@@ -224,7 +244,8 @@ for epoch in range(epochs):
             v_loss += loss
     
     print(f'E{epoch+1}: T:{t_loss/len(train_dl)} V:{v_loss/len(test_dl)}')
-    wandb.log({"train loss": t_loss/len(train_dl), "valid loss": v_loss/len(test_dl)})
+    if w:
+        wandb.log({"train loss": t_loss/len(train_dl), "valid loss": v_loss/len(test_dl)})
     if v_loss <= bestL:
         bestL = v_loss
         bestModel = copy.deepcopy(model)
@@ -278,5 +299,5 @@ for i in range(len(xtest)):
     plt.plot(pred_rv, label='Predicted Data') # predicted plot
     plt.title('Time-Series Prediction')
     plt.legend()
-    plt.savefig(path + "whole_plot.png", dpi=300)
+    plt.savefig(path + "plots/{coins[i]}_whole_plot.png", dpi=300)
     plt.show() 
