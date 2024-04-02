@@ -28,7 +28,7 @@ device = 'cuda'
 trainWindow = 256
 predWindow = 1
 batch = 32
-epochs = 25
+epochs = 500
 lr = 0.0001
 inSize = 4
 hidSize = 64
@@ -40,7 +40,7 @@ criterion = nn.MSELoss()
 #Wandb
 wandb.init(
     # set the wandb project where this run will be logged
-    name='test3',
+    name='testlong',
     project="Cryp-Tor",
     entity='unitnais',
 
