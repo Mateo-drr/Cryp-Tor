@@ -26,6 +26,7 @@ def getRSI(df):
 
 
 #Note: The first n-1 period of Data will be Nan because of Moving average
+#Use: rsi.dropna(inplace=True) 
   
 
 #TODO check if ewn(Exp Weighted MA) is better than Simple moving average
@@ -52,3 +53,10 @@ def getRSI(df):
 # ax2.axhline(66.66, linestyle = '--', linewidth=1.5, color='red')   #OverBought "SELL"
 # ax2.set_title('Relative Strength Index')
 # plt.show()
+#------------------------------------------------------------------------------
+  #
+  #
+  #----------------or use -------------------
+  # rs = avg_gain / avg_loss
+  # rsi = 100 - (100 / (1 + rs))
+  #------------------------------------------  
