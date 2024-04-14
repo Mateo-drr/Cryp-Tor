@@ -1,0 +1,24 @@
+Training Shape: (1958, 256, 6) (1958, 16)
+Valid Shape: (566, 256, 6) (566, 16)
+Training Shape: (1223, 256, 6) (1223, 16)
+Valid Shape: (290, 256, 6) (290, 16)
+Training Shape: (1225, 256, 6) (1225, 16)
+Valid Shape: (292, 256, 6) (292, 16)
+Training Shape: (1227, 256, 6) (1227, 16)
+Valid Shape: (292, 256, 6) (292, 16)
+Traceback (most recent call last):
+  File "S:\Cryp-Tor\CryptoTransformer.py", line 385, in <module>
+    optimizer.step()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\optim\optimizer.py", line 373, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\optim\optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\optim\adamw.py", line 184, in step
+    adamw(
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\optim\adamw.py", line 335, in adamw
+    func(
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\optim\adamw.py", line 537, in _multi_tensor_adamw
+    torch._foreach_mul_(device_params, 1 - lr * weight_decay)
+KeyboardInterrupt

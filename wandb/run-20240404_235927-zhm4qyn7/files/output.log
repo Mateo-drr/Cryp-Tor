@@ -1,0 +1,24 @@
+Training Shape: (2070, 128, 5) (2070, 32)
+Valid Shape: (678, 128, 5) (678, 32)
+Training Shape: (1335, 128, 5) (1335, 32)
+Valid Shape: (402, 128, 5) (402, 32)
+Training Shape: (1337, 128, 5) (1337, 32)
+Valid Shape: (404, 128, 5) (404, 32)
+E1: T:0.019188597798347473 V:0.013664992526173592
+E2: T:0.00797299575060606 V:0.026107262820005417
+E3: T:0.00903370138257742 V:0.03657400980591774
+E4: T:0.009398571215569973 V:0.05000836029648781
+E5: T:0.008454822935163975 V:0.03482264652848244
+E6: T:0.00901517178863287 V:0.050038114190101624
+E7: T:0.016429521143436432 V:0.0911908820271492
+E8: T:0.022903745993971825 V:0.10236851125955582
+E9: T:0.0229641105979681 V:0.1044749990105629
+E10: T:0.022572586312890053 V:0.10896217077970505
+Traceback (most recent call last):
+  File "S:\Cryp-Tor\CryptoTransformer.py", line 379, in <module>
+    loss.backward()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\autograd\__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

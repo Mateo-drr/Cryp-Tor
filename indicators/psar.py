@@ -4,7 +4,7 @@ Created on Wed Apr  3 00:22:45 2024
 
 @author: joels
 """
-
+import numpy as np
 
 def calculate(new):
     
@@ -61,11 +61,13 @@ def calculate(new):
     return new
 
 
-def psar(new):
-    
+def getPSAR(new):
     calculate(new)
-    new = new.drop(new.index[0])
-    
+    #remove columns we dont need
+    new = new.drop(['ep','af','trend','real sar'], axis=1)
+    #new = new.drop(new.index[0])
+    #remove last line which is extra
+    new = new.drop(new.index[-1])
     return new
 
 

@@ -5,7 +5,7 @@ Created on Mon Apr  1 21:01:10 2024
 @author: joels
 """
 
-def bollband(df,period,m):
+def getBBAND(df,period,m):
     
     avg_hlc = (df.High + df.Low + df.Close)/3
     mean = avg_hlc.rolling(period).mean()
@@ -14,6 +14,10 @@ def bollband(df,period,m):
     upband = mean + std*m
     midband = mean
     lowband = mean - std*m
+    
+    upband = upband.fillna(0)
+    midband = midband.fillna(0)
+    lowband = lowband.fillna(0)
     
     return upband, midband, lowband
 
@@ -31,7 +35,7 @@ def bollband(df,period,m):
 # path = #local dir
 # df = pd.read_csv(path + f'data/{name}-USD.csv', index_col = 'Date', parse_dates=True)
 
-# df["BBUp"],df["BBMid"],df["BBLow"] = bollband(df,20,2)
+# df["BBUp"],df["BBMid"],df["BBLow"] = getBBAND(df,20,2)
 
 # delta = df.tail(200)  #Sample
 

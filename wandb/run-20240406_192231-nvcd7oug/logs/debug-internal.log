@@ -1,0 +1,490 @@
+2024-04-06 19:22:31,173 INFO    StreamThr :18216 [internal.py:wandb_internal():86] W&B internal server running at pid: 18216, started at: 2024-04-06 19:22:31.172167
+2024-04-06 19:22:31,174 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status
+2024-04-06 19:22:31,179 INFO    WriterThread:18216 [datastore.py:open_for_write():85] open: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\run-nvcd7oug.wandb
+2024-04-06 19:22:31,179 DEBUG   SenderThread:18216 [sender.py:send():382] send: header
+2024-04-06 19:22:31,214 DEBUG   SenderThread:18216 [sender.py:send():382] send: run
+2024-04-06 19:22:31,809 INFO    SenderThread:18216 [dir_watcher.py:__init__():211] watching files in: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files
+2024-04-06 19:22:31,809 INFO    SenderThread:18216 [sender.py:_start_run_threads():1136] run started: nvcd7oug with start time 1712424151.174179
+2024-04-06 19:22:31,824 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: check_version
+2024-04-06 19:22:31,824 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: check_version
+2024-04-06 19:22:32,159 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: run_start
+2024-04-06 19:22:32,179 DEBUG   HandlerThread:18216 [system_info.py:__init__():32] System info init
+2024-04-06 19:22:32,179 DEBUG   HandlerThread:18216 [system_info.py:__init__():47] System info init done
+2024-04-06 19:22:32,179 INFO    HandlerThread:18216 [system_monitor.py:start():194] Starting system monitor
+2024-04-06 19:22:32,179 INFO    SystemMonitor:18216 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-06 19:22:32,179 INFO    HandlerThread:18216 [system_monitor.py:probe():214] Collecting system info
+2024-04-06 19:22:32,179 INFO    SystemMonitor:18216 [interfaces.py:start():190] Started cpu monitoring
+2024-04-06 19:22:32,179 INFO    SystemMonitor:18216 [interfaces.py:start():190] Started disk monitoring
+2024-04-06 19:22:32,179 INFO    SystemMonitor:18216 [interfaces.py:start():190] Started gpu monitoring
+2024-04-06 19:22:32,179 INFO    SystemMonitor:18216 [interfaces.py:start():190] Started memory monitoring
+2024-04-06 19:22:32,189 INFO    SystemMonitor:18216 [interfaces.py:start():190] Started network monitoring
+2024-04-06 19:22:32,209 DEBUG   HandlerThread:18216 [system_info.py:probe():196] Probing system
+2024-04-06 19:22:32,209 DEBUG   HandlerThread:18216 [system_info.py:_probe_git():181] Probing git
+2024-04-06 19:22:32,259 DEBUG   HandlerThread:18216 [system_info.py:_probe_git():189] Probing git done
+2024-04-06 19:22:32,259 DEBUG   HandlerThread:18216 [system_info.py:probe():244] Probing system done
+2024-04-06 19:22:32,259 DEBUG   HandlerThread:18216 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.5', 'heartbeatAt': '2024-04-06T17:22:32.209383', 'startedAt': '2024-04-06T17:22:31.159081', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'S:\\Cryp-Tor\\CryptoTransformer.py', 'codePathLocal': 'CryptoTransformer.py', 'codePath': 'CryptoTransformer.py', 'git': {'remote': 'https://github.com/Mateo-drr/Cryp-Tor.git', 'commit': '1adc8a5e4fcd3bc7f89e7c68db87e7811b9fb492'}, 'email': 'mateodrr@gmail.com', 'root': 'S:/Cryp-Tor', 'host': 'DESKTOP-24KBHOO', 'username': 'Mateo-drr', 'executable': 'C:\\Users\\Mateo-drr\\AppData\\Local\\miniconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3300.0, 'min': 0.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 3300.0, 'min': 0.0, 'max': 3300.0}], 'disk': {'/': {'total': 465.75976181030273, 'used': 32.5125617980957}}, 'gpu': 'NVIDIA GeForce RTX 2060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2060', 'memory_total': 12884901888}], 'memory': {'total': 15.828716278076172}}
+2024-04-06 19:22:32,259 INFO    HandlerThread:18216 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-06 19:22:32,259 INFO    HandlerThread:18216 [system_monitor.py:probe():227] Publishing system info
+2024-04-06 19:22:32,259 DEBUG   HandlerThread:18216 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-04-06 19:22:32,259 DEBUG   HandlerThread:18216 [system_info.py:_save_pip():68] Saving pip packages done
+2024-04-06 19:22:32,259 DEBUG   HandlerThread:18216 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-04-06 19:22:32,829 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\requirements.txt
+2024-04-06 19:22:32,829 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\conda-environment.yaml
+2024-04-06 19:22:36,558 DEBUG   HandlerThread:18216 [system_info.py:_save_conda():87] Saving conda packages done
+2024-04-06 19:22:36,558 INFO    HandlerThread:18216 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-06 19:22:36,558 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:22:36,558 DEBUG   SenderThread:18216 [sender.py:send():382] send: files
+2024-04-06 19:22:36,558 INFO    SenderThread:18216 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-04-06 19:22:36,566 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-06 19:22:36,566 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: stop_status
+2024-04-06 19:22:36,566 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 19:22:36,877 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\conda-environment.yaml
+2024-04-06 19:22:36,877 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\wandb-metadata.json
+2024-04-06 19:22:36,977 DEBUG   SenderThread:18216 [sender.py:send():382] send: telemetry
+2024-04-06 19:22:37,469 INFO    wandb-upload_0:18216 [upload_job.py:push():131] Uploaded file C:\Users\MATEO-~1\AppData\Local\Temp\tmphgeozwyfwandb\zemwzvrh-wandb-metadata.json
+2024-04-06 19:22:42,044 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:22:47,082 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:22:48,976 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\output.log
+2024-04-06 19:22:50,991 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\output.log
+2024-04-06 19:22:51,577 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 19:22:51,577 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-06 19:22:51,577 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: stop_status
+2024-04-06 19:22:52,751 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:22:57,754 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:02,758 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:03,058 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\config.yaml
+2024-04-06 19:23:06,581 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 19:23:06,596 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-06 19:23:06,596 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: stop_status
+2024-04-06 19:23:08,918 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:13,941 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:18,969 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:21,582 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 19:23:21,613 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-06 19:23:21,613 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: stop_status
+2024-04-06 19:23:24,881 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:29,919 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:32,200 DEBUG   SystemMonitor:18216 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-06 19:23:32,201 DEBUG   SenderThread:18216 [sender.py:send():382] send: stats
+2024-04-06 19:23:35,225 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:36,584 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 19:23:36,628 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-06 19:23:36,628 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: stop_status
+2024-04-06 19:23:41,043 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:46,093 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:48,875 DEBUG   SenderThread:18216 [sender.py:send():382] send: exit
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:send_exit():589] handling exit code: 255
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:send_exit():591] handling runtime: 76
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:send_exit():597] send defer
+2024-04-06 19:23:48,875 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,875 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-06 19:23:48,875 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 1
+2024-04-06 19:23:48,875 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,875 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-06 19:23:48,875 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-04-06 19:23:48,875 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 2
+2024-04-06 19:23:48,875 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,875 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-06 19:23:48,875 INFO    HandlerThread:18216 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-06 19:23:48,875 DEBUG   SystemMonitor:18216 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-06 19:23:48,891 INFO    HandlerThread:18216 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-06 19:23:48,891 DEBUG   SystemMonitor:18216 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-06 19:23:48,891 INFO    HandlerThread:18216 [interfaces.py:finish():202] Joined disk monitor
+2024-04-06 19:23:48,907 INFO    HandlerThread:18216 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-06 19:23:48,907 INFO    HandlerThread:18216 [interfaces.py:finish():202] Joined memory monitor
+2024-04-06 19:23:48,907 INFO    HandlerThread:18216 [interfaces.py:finish():202] Joined network monitor
+2024-04-06 19:23:48,907 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 3
+2024-04-06 19:23:48,907 DEBUG   SenderThread:18216 [sender.py:send():382] send: stats
+2024-04-06 19:23:48,907 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,907 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-06 19:23:48,907 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 4
+2024-04-06 19:23:48,907 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,907 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-06 19:23:48,907 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 5
+2024-04-06 19:23:48,907 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,907 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-06 19:23:48,907 DEBUG   SenderThread:18216 [sender.py:send():382] send: summary
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-04-06 19:23:48,907 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,907 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-04-06 19:23:48,922 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 6
+2024-04-06 19:23:48,922 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,922 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-06 19:23:48,922 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,922 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-04-06 19:23:48,922 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 7
+2024-04-06 19:23:48,922 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: status_report
+2024-04-06 19:23:48,922 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:48,922 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-06 19:23:48,922 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:48,922 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-04-06 19:23:49,024 ERROR   FileStreamThread:18216 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/unitnais/Cryp-Tor/nvcd7oug/file_stream
+NoneType: None
+2024-04-06 19:23:49,346 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_created():271] file/dir created: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\wandb-summary.json
+2024-04-06 19:23:49,895 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 19:23:50,880 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 8
+2024-04-06 19:23:50,880 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: poll_exit
+2024-04-06 19:23:50,880 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:50,880 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-06 19:23:50,880 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:50,880 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-04-06 19:23:50,880 INFO    SenderThread:18216 [job_builder.py:build():298] Attempting to build job artifact
+2024-04-06 19:23:50,880 INFO    SenderThread:18216 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-04-06 19:23:50,896 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 19:23:50,900 INFO    SenderThread:18216 [job_builder.py:build():404] adding wandb-job metadata file
+2024-04-06 19:23:50,916 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 9
+2024-04-06 19:23:50,916 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: poll_exit
+2024-04-06 19:23:50,916 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:50,916 DEBUG   SenderThread:18216 [sender.py:send():382] send: artifact
+2024-04-06 19:23:50,916 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-06 19:23:51,349 INFO    Thread-16 :18216 [dir_watcher.py:_on_file_modified():288] file/dir modified: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\output.log
+2024-04-06 19:23:51,732 ERROR   SenderThread:18216 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-06 19:23:51,732 ERROR   SenderThread:18216 [internal_api.py:execute():374] {"errors":[{"message":"failed to find run Cryp-Tor/nvcd7oug","path":["useArtifact"]}],"data":{"useArtifact":null}}
+2024-04-06 19:23:51,732 ERROR   SenderThread:18216 [sender.py:send_artifact():1472] send_artifact: failed for artifact "job/job-https___github.com_Mateo-drr_Cryp-Tor.git_CryptoTransformer.py": It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-06 19:23:51,732 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:51,732 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-04-06 19:23:51,732 INFO    SenderThread:18216 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-06 19:23:51,902 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [dir_watcher.py:finish():388] scan: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [dir_watcher.py:finish():402] scan save: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\conda-environment.yaml conda-environment.yaml
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [dir_watcher.py:finish():402] scan save: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\config.yaml config.yaml
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [dir_watcher.py:finish():402] scan save: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\output.log output.log
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [dir_watcher.py:finish():402] scan save: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\requirements.txt requirements.txt
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [dir_watcher.py:finish():402] scan save: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\wandb-metadata.json wandb-metadata.json
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [dir_watcher.py:finish():402] scan save: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\wandb-summary.json wandb-summary.json
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 10
+2024-04-06 19:23:52,357 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: poll_exit
+2024-04-06 19:23:52,357 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:52,357 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-06 19:23:52,357 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-04-06 19:23:52,357 INFO    SenderThread:18216 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-06 19:23:52,500 ERROR   wandb-upload_1:18216 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-06 19:23:52,500 ERROR   wandb-upload_1:18216 [internal_api.py:execute():374] {"errors":[{"message":"run Cryp-Tor/nvcd7oug not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-04-06 19:23:52,500 ERROR   Thread-15 (_thread_body):18216 [step_upload.py:_handle_event():200] Failed to upload file: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\config.yaml
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-06 19:23:52,500 ERROR   wandb-upload_0:18216 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-06 19:23:52,578 ERROR   wandb-upload_0:18216 [internal_api.py:execute():374] {"errors":[{"message":"run Cryp-Tor/nvcd7oug not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-04-06 19:23:52,578 ERROR   Thread-15 (_thread_body):18216 [step_upload.py:_handle_event():200] Failed to upload file: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\conda-environment.yaml
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-06 19:23:52,861 ERROR   wandb-upload_4:18216 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-06 19:23:52,861 ERROR   wandb-upload_4:18216 [internal_api.py:execute():374] {"errors":[{"message":"run Cryp-Tor/nvcd7oug not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-04-06 19:23:52,861 ERROR   Thread-15 (_thread_body):18216 [step_upload.py:_handle_event():200] Failed to upload file: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\wandb-summary.json
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-06 19:23:52,877 ERROR   wandb-upload_2:18216 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-06 19:23:52,877 ERROR   wandb-upload_2:18216 [internal_api.py:execute():374] {"errors":[{"message":"run Cryp-Tor/nvcd7oug not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-04-06 19:23:52,877 ERROR   Thread-15 (_thread_body):18216 [step_upload.py:_handle_event():200] Failed to upload file: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\output.log
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-06 19:23:52,892 ERROR   wandb-upload_3:18216 [internal_api.py:execute():373] 404 response executing GraphQL.
+2024-04-06 19:23:52,892 ERROR   wandb-upload_3:18216 [internal_api.py:execute():374] {"errors":[{"message":"run Cryp-Tor/nvcd7oug not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-04-06 19:23:52,892 ERROR   Thread-15 (_thread_body):18216 [step_upload.py:_handle_event():200] Failed to upload file: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\files\requirements.txt
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 57, in run
+    self.push()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\filesync\upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\wandb\util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-04-06 19:23:52,908 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 19:23:52,908 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: poll_exit
+2024-04-06 19:23:53,108 INFO    Thread-15 (_thread_body):18216 [sender.py:transition_state():617] send defer: 11
+2024-04-06 19:23:53,108 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:53,108 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-06 19:23:53,108 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:53,108 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-04-06 19:23:53,108 INFO    SenderThread:18216 [file_pusher.py:join():181] waiting for file pusher
+2024-04-06 19:23:53,108 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 12
+2024-04-06 19:23:53,108 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:53,108 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-06 19:23:53,108 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:53,108 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-04-06 19:23:53,108 INFO    SenderThread:18216 [file_stream.py:finish():595] file stream finish called
+2024-04-06 19:23:53,239 ERROR   FileStreamThread:18216 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/unitnais/Cryp-Tor/nvcd7oug/file_stream
+NoneType: None
+2024-04-06 19:23:53,379 INFO    SenderThread:18216 [file_stream.py:finish():599] file stream finish is done
+2024-04-06 19:23:53,379 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 13
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:53,379 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-06 19:23:53,379 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:53,379 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-04-06 19:23:53,379 INFO    SenderThread:18216 [sender.py:transition_state():617] send defer: 14
+2024-04-06 19:23:53,379 DEBUG   SenderThread:18216 [sender.py:send():382] send: final
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: defer
+2024-04-06 19:23:53,379 INFO    HandlerThread:18216 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-06 19:23:53,379 DEBUG   SenderThread:18216 [sender.py:send():382] send: footer
+2024-04-06 19:23:53,379 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: defer
+2024-04-06 19:23:53,379 INFO    SenderThread:18216 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 19:23:53,379 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: poll_exit
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: server_info
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-06 19:23:53,379 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: poll_exit
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-06 19:23:53,379 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: server_info
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-06 19:23:53,379 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: job_info
+2024-04-06 19:23:53,536 DEBUG   SenderThread:18216 [sender.py:send_request():409] send_request: job_info
+2024-04-06 19:23:53,536 INFO    MainThread:18216 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-04-06 19:23:53,536 INFO    MainThread:18216 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-04-06 19:23:53,536 INFO    MainThread:18216 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-04-06 19:23:53,536 DEBUG   HandlerThread:18216 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-06 19:23:53,536 INFO    HandlerThread:18216 [handler.py:finish():866] shutting down handler
+2024-04-06 19:23:54,396 INFO    WriterThread:18216 [datastore.py:close():294] close: S:\Cryp-Tor\wandb\run-20240406_192231-nvcd7oug\run-nvcd7oug.wandb
+2024-04-06 19:23:54,549 INFO    SenderThread:18216 [sender.py:finish():1548] shutting down sender
+2024-04-06 19:23:54,549 INFO    SenderThread:18216 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-06 19:23:54,549 INFO    SenderThread:18216 [file_pusher.py:join():181] waiting for file pusher

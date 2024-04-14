@@ -1,0 +1,14 @@
+Training Shape: (1942, 256, 5) (1942, 32)
+Valid Shape: (550, 256, 5) (550, 32)
+Training Shape: (1207, 256, 5) (1207, 32)
+Valid Shape: (274, 256, 5) (274, 32)
+Training Shape: (1209, 256, 5) (1209, 32)
+Valid Shape: (276, 256, 5) (276, 32)
+Traceback (most recent call last):
+  File "S:\Cryp-Tor\CryptoTransformer.py", line 379, in <module>
+    loss.backward()
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "C:\Users\Mateo-drr\AppData\Local\miniconda3\Lib\site-packages\torch\autograd\__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

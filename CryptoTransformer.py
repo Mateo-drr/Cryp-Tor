@@ -20,6 +20,12 @@ import copy
 import wandb
 from indicators.rsi import getRSI
 import math
+from indicators.psar import getPSAR
+from indicators.bollingerband import getBBAND
+from indicators.halving import getHalving
+from tqdm import tqdm
+import torch.nn.utils as torch_utils
+
 
 #Link to dowload historical crypto data
 #https://finance.yahoo.com/quote/BTC-USD/history?period1=1410912000&period2=1711670400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true
@@ -28,28 +34,41 @@ import math
 path = 'S:/Cryp-Tor/'
 #path = 'C:/Users/joels/Documents/GitHub/Cryp-Tor/'
 device = 'cuda'
-w=False
+w=True
 trainWindow = 256
 predWindow = 1
 batch = 32
-epochs = 1
-lr = 0.00008
-inSize = 5
+epochs = 25
+lr = 0.00005
+clip=3 #grad clipping
+inSize = 8
 hidSize = 1024
 outSize = predWindow
 heads = 8 #bert has 12, large has 16
 layers = 12 #bert has 12, large has 24
-dout=0.4
+dout=0.1
 criterion = nn.MSELoss()
-coins=['BTC','ETH','XRP']
+coins=['BTC',
+       'ETH',
+       'XRP',
+       'BNB',
+       'DOGE',
+       'ADA',
+       'SOL',
+       'DOT',
+       ]
 dframes = []
 indicators = {'rsi':[]}
-#Wandb
 
+# torch.set_num_threads(8)
+# torch.set_num_interop_threads(8)
+torch.backends.cudnn.benchmark=True
+
+#Wandb
 if w:
     wandb.init(
         # set the wandb project where this run will be logged
-        name='repmode',
+        name='256/1 8c 8i psar',
         project="Cryp-Tor",
         entity='unitnais',
     
@@ -64,7 +83,8 @@ if w:
         "hidden_size": hidSize,
         "output_size": outSize,
         "num_heads": heads,
-        "num_layers": layers
+        "num_layers": layers,
+        'coins':coins
         }
     )
 
@@ -86,10 +106,16 @@ def plotData(df,name):
 for coin in coins:
     df = readData(coin)
     rsi = getRSI(df)
+    #df = getPSAR(df) #func already adds it to the df
+    
+    up,_,down = getBBAND(df,2,20)
     #add the indicator to the df
     df['rsi'] = rsi
+    df['b_up'] = up
+    df['b_dwn'] = down
+    df = getHalving(df)
     dframes.append(df)
-    plotData(df, coin)
+    #plotData(df, coin)
 
 # split a multivariate sequence past, future samples (X and y)
 # TLDR it organizes the data, so that for example you have to predict
@@ -169,6 +195,23 @@ y_valid = np.concatenate(y_valid, axis=0)
 #PYTORCH
 ###############################################################################
 
+def smape(actual, forecast):
+    """
+    Calculate Symmetric Mean Absolute Percentage Error (SMAPE)
+    
+    Parameters:
+        actual (tensor): Tensor of actual values
+        forecast (tensor): Tensor of forecasted values
+    
+    Returns:
+        tensor: SMAPE value
+    """
+    denominator = (torch.abs(actual) + torch.abs(forecast)) / 2
+    diff = torch.abs(actual - forecast) / denominator
+    diff[denominator == 0] = 0  # Handle division by zero
+    smape_val = torch.mean(diff) * 100
+    return smape_val
+
 class CustomDataset(Dataset):
     def __init__(self, data,lbl):
         #copy the data
@@ -196,8 +239,10 @@ class CrypTor(nn.Module):
         self.autobot = nn.TransformerEncoder(encoder_layer, layers)
         self.fc = nn.Linear(hidSize, outSize)
         self.dropout = nn.Dropout(dout)
-        self.down = nn.Linear(256,1)
+        self.down = nn.Linear(trainWindow,1)
         self.mish = nn.Mish(inplace=True)
+        self.bn = nn.BatchNorm1d(hidSize,affine=True)
+        #self.bn2 = nn.BatchNorm1d(hidSize,affine=True)
         
         #repmode
         self.num_experts=5
@@ -207,6 +252,10 @@ class CrypTor(nn.Module):
                                         self.num_tasks,
                                         trainWindow,
                                         trainWindow)
+        # self.repmode0 = MoDESubNetConv1d(self.num_experts,
+        #                                 self.num_tasks,
+        #                                 trainWindow,
+        #                                 trainWindow)
         
     def one_hot_task_embedding(self, task_id):
         N = task_id.shape[0]
@@ -217,37 +266,48 @@ class CrypTor(nn.Module):
         
     def forward(self,x,t):
         #[b,256,4]
-        
         task_emb = self.one_hot_task_embedding(t)
-        x = self.repmode(x,task_emb)
-        #[b,256,64]
-
-        x = self.encoder(x)
-        x = self.mish(x)
-        x = self.dropout(x)
+        #x = self.repmode0(x,task_emb)
         
-        x = self.autobot(x)
+        x = self.encoder(x)
+        #x = self.bn(x.permute([0,2,1])).permute([0,2,1]) #normalize features
         x = self.mish(x)
         x = self.dropout(x)
-        #[b,256,64]
-        x = self.down(x.permute([0,2,1])).squeeze(2)
+        #[b,256,hidSize]
+        
+        
+        x = self.repmode(x,task_emb)
+        xj = self.dropout(x)
+        #[b,256,hidSize]
+        
+        x = self.autobot(xj)
+        #x = self.bn(x.permute([0,2,1])).permute([0,2,1]) #normalize features
         x = self.mish(x)
-        #[b,64]
+        x = self.dropout(x) + 0.2*xj
+        #[b,256,hidSize]
+        
+        x = self.down(x.permute([0,2,1])).squeeze(2)
+        #x = self.bn(x)
+        x = self.mish(x)
+        x = self.dropout(x)
+        #[b,hidSize]
+        
         x = self.fc(x)  
         #[b,1]
+        
         return x
     
 class MoDESubNetConv1d(torch.nn.Module):
     def __init__(self, num_experts, num_tasks, n_in, n_out):
         super().__init__()
         self.conv1 = MoDEConv2d(num_experts, num_tasks, n_in, n_out, kernel_size=5, padding='same')
-        self.conv2 = MoDEConv2d(num_experts, num_tasks, n_out, n_out, kernel_size=5, padding='same')
+        #self.conv2 = MoDEConv2d(num_experts, num_tasks, n_out, n_out, kernel_size=5, padding='same')
 
     def forward(self, x, t):
         x = x.unsqueeze(3) # [b,256,4,1]
         x = self.conv1(x, t) #[b,16,64,64,64] #[...,32,32,32] ... 4,4,4
         #x = self.rrdb(x)
-        x = self.conv2(x, t)
+        #x = self.conv2(x, t)
         x = x.squeeze(3) # [b,256,4]
         return x
 
@@ -275,7 +335,7 @@ class MoDEConv2d(torch.nn.Module):
         assert self.conv_type in ['normal', 'final']
         if self.conv_type == 'normal':
             self.subsequent_layer = torch.nn.Sequential(
-                nn.BatchNorm2d(out_chan, affine=True), #torch.nn.BatchNorm3d(out_chan),
+                #nn.BatchNorm2d(out_chan, affine=True), #torch.nn.BatchNorm3d(out_chan),
                 nn.Mish(inplace=True)
             )
         else:
@@ -348,6 +408,8 @@ class MoDEConv2d(torch.nn.Module):
 Training
 '''
 
+#criterion = smape
+
 #Datasets
 train_ds = CustomDataset(X_train,y_train)
 test_ds = CustomDataset(X_valid, y_valid)
@@ -355,18 +417,18 @@ test_ds = CustomDataset(X_valid, y_valid)
 train_dl = DataLoader(train_ds,batch_size=batch,shuffle=True,pin_memory=True)
 test_dl = DataLoader(test_ds,batch_size=batch,shuffle=False)
 #Model and optim
-model = CrypTor(inSize, hidSize, outSize, heads, layers,trainWindow,dout,device=device)
+model = CrypTor(inSize, hidSize, outSize, heads, layers,trainWindow,dout=dout,device=device)
 model.to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
 
 #LOOPS
-bestL = 100
+bestL = 1e20
 for epoch in range(epochs):
     #Train
     model.train()
     t_loss = 0
     
-    for data in train_dl:
+    for data in tqdm(train_dl):
         inp = data['inp'].to(device)
         lbl = data['lbl'].to(device)
         t = data['t']
@@ -376,6 +438,7 @@ for epoch in range(epochs):
         
         optimizer.zero_grad()
         loss.backward()
+        torch_utils.clip_grad_norm_(model.parameters(), clip)
         optimizer.step()
         
         t_loss += loss
@@ -463,11 +526,11 @@ for i in range(len(xtest)):
     finalLbl += list(lbl_rv[-1][1:])
     
     for k,price in enumerate(finalPred):
-        price = price/num[k] #average out predictions
+        finalPred[k] = price/num[k] #average out predictions
 
     plt.plot(finalLbl, label='Actual Data') # actual plot
     plt.plot(finalPred, label='Predicted Data') # predicted plot
-    plt.title('Time-Series Prediction')
+    plt.title(f'{coins[i]} Prediction')
     plt.legend()
     plt.savefig(path + f"plots/{coins[i]}_whole_plot.png", dpi=300)
     plt.show() 

@@ -1,0 +1,13 @@
+Training Shape: (1958, 256, 6) (1958, 16)
+Valid Shape: (566, 256, 6) (566, 16)
+Training Shape: (1223, 256, 6) (1223, 16)
+Valid Shape: (290, 256, 6) (290, 16)
+Training Shape: (1225, 256, 6) (1225, 16)
+Valid Shape: (292, 256, 6) (292, 16)
+Training Shape: (1227, 256, 6) (1227, 16)
+Valid Shape: (292, 256, 6) (292, 16)
+Traceback (most recent call last):
+  File "S:\Cryp-Tor\CryptoTransformer.py", line 383, in <module>
+    model.train()
+              ^^^^
+KeyboardInterrupt

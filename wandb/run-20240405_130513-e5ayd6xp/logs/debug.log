@@ -1,0 +1,28 @@
+2024-04-05 13:05:13,450 INFO    MainThread:18100 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-04-05 13:05:13,450 INFO    MainThread:18100 [wandb_setup.py:_flush():76] Configure stats pid to 18100
+2024-04-05 13:05:13,450 INFO    MainThread:18100 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Mateo-drr\.config\wandb\settings
+2024-04-05 13:05:13,450 INFO    MainThread:18100 [wandb_setup.py:_flush():76] Loading settings from S:\Cryp-Tor\wandb\settings
+2024-04-05 13:05:13,450 INFO    MainThread:18100 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-05 13:05:13,450 INFO    MainThread:18100 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-05 13:05:13,451 INFO    MainThread:18100 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'CryptoTransformer.py', 'program_abspath': 'S:\\Cryp-Tor\\CryptoTransformer.py', 'program': 'S:\\Cryp-Tor\\CryptoTransformer.py'}
+2024-04-05 13:05:13,451 INFO    MainThread:18100 [wandb_init.py:_log_setup():524] Logging user logs to S:\Cryp-Tor\wandb\run-20240405_130513-e5ayd6xp\logs\debug.log
+2024-04-05 13:05:13,451 INFO    MainThread:18100 [wandb_init.py:_log_setup():525] Logging internal logs to S:\Cryp-Tor\wandb\run-20240405_130513-e5ayd6xp\logs\debug-internal.log
+2024-04-05 13:05:13,451 INFO    MainThread:18100 [wandb_init.py:init():564] calling init triggers
+2024-04-05 13:05:13,451 INFO    MainThread:18100 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'train_window': 128, 'pred_window': 32, 'batch_size': 32, 'epochs': 25, 'learning_rate': 8e-05, 'input_size': 5, 'hidden_size': 2048, 'output_size': 32, 'num_heads': 8, 'num_layers': 12}
+2024-04-05 13:05:13,451 INFO    MainThread:18100 [wandb_init.py:init():614] starting backend
+2024-04-05 13:05:13,451 INFO    MainThread:18100 [wandb_init.py:init():618] setting up manager
+2024-04-05 13:05:13,454 INFO    MainThread:18100 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-04-05 13:05:13,456 INFO    MainThread:18100 [wandb_init.py:init():624] backend started and connected
+2024-04-05 13:05:13,461 INFO    MainThread:18100 [wandb_init.py:init():716] updated telemetry
+2024-04-05 13:05:13,475 INFO    MainThread:18100 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-04-05 13:05:14,037 INFO    MainThread:18100 [wandb_run.py:_on_init():2254] communicating current version
+2024-04-05 13:05:14,310 INFO    MainThread:18100 [wandb_run.py:_on_init():2263] got version response upgrade_message: "wandb version 0.16.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-04-05 13:05:14,310 INFO    MainThread:18100 [wandb_init.py:init():800] starting run threads in backend
+2024-04-05 13:05:17,631 INFO    MainThread:18100 [wandb_run.py:_console_start():2233] atexit reg
+2024-04-05 13:05:17,631 INFO    MainThread:18100 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-04-05 13:05:17,631 INFO    MainThread:18100 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-04-05 13:05:17,631 INFO    MainThread:18100 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-04-05 13:05:17,631 INFO    MainThread:18100 [wandb_init.py:init():841] run started, returning control to user process
+2024-04-05 13:43:40,270 WARNING MsgRouterThr:18100 [router.py:message_loop():77] message_loop has been closed

@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-04-07T13:37:15.868573",
+    "startedAt": "2024-04-07T13:37:14.319073",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "s:\\cryp-tor\\cryptotransformer.py",
+    "codePathLocal": "cryptotransformer.py",
+    "codePath": "cryptotransformer.py",
+    "git": {
+        "remote": "https://github.com/Mateo-drr/Cryp-Tor.git",
+        "commit": "1adc8a5e4fcd3bc7f89e7c68db87e7811b9fb492"
+    },
+    "email": "mateodrr@gmail.com",
+    "root": "S:/Cryp-Tor",
+    "host": "DESKTOP-24KBHOO",
+    "username": "Mateo-drr",
+    "executable": "C:\\Users\\Mateo-drr\\AppData\\Local\\miniconda3\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3300.0,
+        "min": 0.0,
+        "max": 3300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3300.0,
+            "min": 0.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 465.75976181030273,
+            "used": 22.367237091064453
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 15.828716278076172
+    }
+}

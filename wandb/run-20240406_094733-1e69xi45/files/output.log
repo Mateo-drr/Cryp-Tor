@@ -1,0 +1,18 @@
+Training Shape: (1958, 256, 6) (1958, 16)
+Valid Shape: (566, 256, 6) (566, 16)
+Training Shape: (1223, 256, 6) (1223, 16)
+Valid Shape: (290, 256, 6) (290, 16)
+Training Shape: (1225, 256, 6) (1225, 16)
+Valid Shape: (292, 256, 6) (292, 16)
+Training Shape: (1227, 256, 6) (1227, 16)
+Valid Shape: (292, 256, 6) (292, 16)
+E1: T:0.025256888940930367 V:0.0384807288646698
+E2: T:0.016616545617580414 V:0.02714071050286293
+E3: T:0.015898937359452248 V:0.02445329539477825
+E4: T:0.030047614127397537 V:0.10112415254116058
+E5: T:0.03605320304632187 V:0.09327872097492218
+Traceback (most recent call last):
+  File "S:\Cryp-Tor\CryptoTransformer.py", line 376, in <module>
+    inp = data['inp'].to(device)
+          ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
